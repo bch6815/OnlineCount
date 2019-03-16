@@ -1,0 +1,8 @@
+2019-03-15 14:23:22 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught exception 'Exception' with message 'You can't send(NULL) to client, you need to convert it to a string. ' in C:\Users\Administrator\PhpstormProjects\onLineCount\OnlineCount\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 C:\Users\Administrator\PhpstormProjects\onLineCount\OnlineCount\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 C:\Users\Administrator\PhpstormProjects\onLineCount\OnlineCount\start.php(18): Workerman\Connection\TcpConnection->send(NULL)
+#2 [internal function]: {closure}()
+#3 C:\Users\Administrator\PhpstormProjects\onLineCount\OnlineCount\vendor\workerman\workerman\Events\Select.php(239): call_user_func_array(Object(Closure), Array)
+#4 C:\Users\Administrator\PhpstormProjects\onLineCount\OnlineCount\vendor\workerman\workerman\Events\Select.php(282): Workerman\Events\Select->tick()
+#5 C:\Users\Administrator\PhpstormProjects\onLineCount\OnlineCount\vendor\worke in C:\Users\Administrator\PhpstormProjects\onLineCount\OnlineCount\vendor\workerman\workerman\Protocols\Websocket.php on line 236"

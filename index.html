@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实时在线人数</title>
+</head>
+<body>
+<h2 id="h2"></h2>
+<script>
+    var ws = new WebSocket("ws://127.0.0.1:1234");
+    ws.onmessage = function (e) {
+        document.getElementById("h2").innerText = "当前在线人数："+e.data;
+    };
+</script>
+</body>
+</html>
